@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #0A007B;  
+}
+
+
+
+header{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 2em;
+}
+
+h1{
+    color: aliceblue;
+    margin-bottom: 0.50em;
+}
+
+.principal{
+    margin: 0 auto;
+    width: 60%;
+    height: 30em;
+    border-radius: 3%;
+    background-color: aliceblue;
+    box-shadow: 10px 5px 5px rgba(19, 18, 18, 0.445);
+
+}
+
+
+.notas__input{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    line-height: 70px;
+    
+}
+
+.input__espaco{
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    width: 40% ;
+    box-shadow: 2px 2px 2px rgba(44, 43, 43, 0.445);
+   
+}
+
+.medias{
+    margin-top: 2em;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    
+}
+
+.media, input{
+    padding: 0.50em;
+    border-radius: 3px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px rgba(44, 43, 43, 0.445);
+    
+}
+
+.btn{
+    margin-top: 3em;
+    text-align: center;
+}
+
+.btn button{
+    text-align: center;
+    padding: 15px;
+    width: 40%;
+    margin-left: 3em;
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: #0a007bda; 
+    color: aliceblue;
+    cursor: pointer;
+   
+}
+
+.btn button:hover{
+    background-color: #5d53cc;
+
+}
