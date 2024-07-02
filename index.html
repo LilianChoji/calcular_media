@@ -35,11 +35,11 @@
             </div>
               <div class="medias">
                     <label for="media">Média:</label>
-                    <input type="text" name="" id="media">
+                    <input type="text" name="" id="media" readonly> <!--apenas leitura-->
                    
 
                     <label for="situacao">Situação:</label>
-                    <input type="text" name="" id="situacao">
+                    <input type="text" name="" id="situacao" readonly>
 
             </div> 
             <div class="btn">
@@ -63,6 +63,13 @@
 
 
         function calcular(){
+
+            if(nota1.value == " " || nota2.value == " " || nota3.value == " " || nota4.value == " "){
+                alert("Insira uma nota ");
+            }else{
+
+            }
+
             let n1 = Number(nota1.value); // converter p/ numero. pegar o valor da nota1
             let n2 = Number(nota2.value);
             let n3 = Number(nota3.value);
@@ -83,8 +90,18 @@
                 situacao.value = "REPROVADO"
             }
 
+            nota1.value = "" // vai mostrar vazio
+            nota2.value = ""
+            nota3.value = ""
+            nota4.value = ""
+        
+            
+            nota1.focus() // foco.w vai ser no em nota1
         }
 
+        
+        
+       
         btnCalcular.addEventListener('click',calcular); // botao add na lista o evento click na função calcular
     </script>
 </body>
